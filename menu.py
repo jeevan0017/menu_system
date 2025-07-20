@@ -27,3 +27,19 @@ def remove_task():
         print(f"Task '{removed}' removed.")
     except(Indexerror,valueerror):
         print("Invalid task number.")
+
+while True:
+    show_menu()
+    choice=input("Enter your choice(1-4):")
+
+    if choice =='1':
+        view_task()
+    elif choice=='2':
+        add_task()
+    elif choice=='3':
+        remove_task()
+    elif choice=='4':
+        print("Exiting...Goodbye!")
+        break
+    else:
+        print("Invalid choice.please enter 1-4.")
