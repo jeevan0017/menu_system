@@ -6,3 +6,10 @@ def show_menu():
     print("2.Add task")
     print("3.Remove task")
     print("4.Exit")
+
+def view_tasks():
+    if not todo_list:
+        print("No tasks found.")
+    else:
+        for idx,task in enumerate(todo_list,1):
+            print(f"{idx}.{task}")
