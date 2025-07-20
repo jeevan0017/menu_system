@@ -13,3 +13,8 @@ def view_tasks():
     else:
         for idx,task in enumerate(todo_list,1):
             print(f"{idx}.{task}")
+
+def add_task():
+    task=input("Enter a new task:")
+    todo_list.append(task)
+    print(f"Task '{task}' added.")
